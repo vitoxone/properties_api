@@ -8,7 +8,7 @@ const projectData = {
   name: packageData.name,
   description: packageData.description || "Sin descripción",
   installation: "npm install",
-  usage: "npm start",
+  usage: "npm run dev",
   license: packageData.license || "No especificada",
   author: packageData.author || "Anónimo",
   keywords: packageData.keywords
@@ -35,12 +35,35 @@ ${data.description}
 ${data.installation}
 \`\`\`
 
-## Uso
+## Uso (GraphQL correrá en http://127.0.0.1:3000)
 
 \`\`\`
 ${data.usage}
+
+
+
 \`\`\`
 
+\`\`\`js
+query { # obtener propiedad
+  query GetProperty($id: ID!) {
+    getProperty(id: $id) {
+      id
+      name
+      description
+      address
+      value
+      type
+    }
+  }
+}
+\`\`\`
+
+\`\`\`variables
+{
+	"id": "675c3a4068430c8b3dc11288"
+}
+\`\`\`
 ## Licencia
 
 Este proyecto está bajo la licencia **${data.license}**.

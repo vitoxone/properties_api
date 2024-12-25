@@ -9,7 +9,7 @@
     "start": "node dist/server.js",
     "generate-readme": "node readme-generator.js"
   },
-  "keywords": ["NodeJs", "Express", "Typescript", "Node", "Sequelize","Mongodb","Jest"],
+  "keywords": ["NodeJs", "Express", "Typescript", "Node", "Sequelize","Mongodb","Jest", "GraphQl"],
   "author": "Victor Silva",
   "license": "ISC",
   "description": "base api NodeJs-Typescript-Sql-Mongodb-Graphql-Jest",
