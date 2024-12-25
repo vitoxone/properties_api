@@ -26,6 +26,7 @@ npm run dev
 
 ```
 
+## Query Examples
 ```js
 query { # obtener propiedad
   query GetProperty($id: ID!) {
