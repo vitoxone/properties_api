@@ -6,12 +6,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev src/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "generate-readme": "node readme-generator.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["NodeJs", "Express", "Typescript", "Node", "Sequelize","Mongodb","Jest"],
+  "author": "Victor Silva",
   "license": "ISC",
-  "description": "",
+  "description": "base api NodeJs-Typescript-Sql-Mongodb-Graphql-Jest",
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
