@@ -44,6 +44,7 @@ ${data.usage}
 
 \`\`\`
 
+## Query Examples
 \`\`\`js
 query { # obtener propiedad
   query GetProperty($id: ID!) {
